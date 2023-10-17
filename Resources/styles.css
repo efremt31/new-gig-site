@@ -1,0 +1,145 @@
+body {
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  min-width: 800px;
+  /*overflow: hidden;  Overflow set to hidden. Any elements outside of the window will not be shown */
+  height: 800px; /* Height set to 100% means the body will extend from the top of the window to the bottom */
+  max-height: 100%; /* Maximum height is limited to 100% */
+  font-family: "Montserrat", sans-serif; /* Font used in body is Montserrat */
+  line-height: 1.5em; /* Line spacing is set to 1.5em */
+  font-size: 18px; /* Font size set to 18px */
+}
+/* navigation and logo*/
+.topnav {
+  display: flex;
+  gap: 20px;
+  border: solid 20px rgb(63, 132, 3);
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  padding-top: 45px;
+  padding-left: 5px;
+  flex-shrink: 3;
+  flex-grow: 1;
+}
+a {
+  color: black;
+  font-weight: bolder;
+}
+a:hover {
+  color: rgb(52, 144, 24);
+  text-decoration: underline;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.accountpic {
+  width: 35px;
+  max-width: 100%;
+}
+
+.accountpic:hover {
+  border-bottom: 5px solid rgb(52, 144, 24);
+}
+
+.accountcontainer {
+  display: flex;
+  gap: 45px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 58px;
+  flex-basis: 100%;
+  flex-shrink: 1;
+}
+
+.logocontainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+.imglogo {
+  width: 55px;
+  border: solid black;
+  max-width: 100%;
+}
+/*search boxes*/
+
+.searchcon {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.jobsearch {
+  border: solid;
+  background-image: url("https://wallpapers.com/images/hd/simple-green-background-gfpvfox7jmtgvh68.webp");
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  background-color: beige;
+}
+/*job resources*/
+.resimg {
+  border: solid grey;
+  width: 350px;
+  height: 300px;
+  max-width: 100%;
+}
+
+.rescontainer {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  justify-content: space-between;
+  background-color: beige;
+  margin-top: 25px;
+  flex-basis: 100%;
+  gap: 100px;
+}
+
+.resinfo {
+  width: 400px;
+}
+
+button {
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*footer*/
+
+.footerlinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: solid 20px rgb(63, 132, 3);
+  height: 60px;
+  margin-top: 50px;
+  padding-top: 45px;
+  padding-left: 5px;
+}
+
+.cright {
+  text-align: center;
+}
