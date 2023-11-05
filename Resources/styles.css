@@ -2,7 +2,7 @@ body {
   background-color: beige;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  min-width: 800px;
+
   /*overflow: hidden;  Overflow set to hidden. Any elements outside of the window will not be shown */
   height: 800px; /* Height set to 100% means the body will extend from the top of the window to the bottom */
   max-height: 100%; /* Maximum height is limited to 100% */
@@ -17,11 +17,13 @@ body {
   border: solid 20px rgb(63, 132, 3);
   height: 60px;
   width: 100%;
+
   margin: auto;
   padding-top: 45px;
   padding-left: 5px;
   flex-shrink: 3;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 a {
   color: black;
@@ -57,6 +59,7 @@ a:visited {
   padding: 58px;
   flex-basis: 100%;
   flex-shrink: 1;
+  flex-wrap: wrap;
 }
 
 .logocontainer {
@@ -142,4 +145,53 @@ button:hover {
 
 .cright {
   text-align: center;
+}
+
+@media all and (max-width: 426px) {
+  body {
+    width: 400px;
+  }
+  .rescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: smaller;
+  }
+  .resimg {
+    width: 270px;
+    height: 150px;
+  }
+
+  .topnav {
+    width: 350px;
+    font-size: 12px;
+  }
+
+  .searchcon {
+    width: 250px;
+    height: 25px;
+    display: flex;
+
+    justify-content: center;
+    padding-left: 60px;
+    flex-wrap: wrap;
+
+    font-size: 16px;
+  }
+
+  input {
+    width: 150px;
+    height: 25px;
+
+    font-size: 10px;
+  }
+
+  .accountpic {
+    width: 20px;
+    padding-top: 30px;
+    padding-right: 42px;
+  }
+
+  footer {
+    width: 350px;
+  }
 }
